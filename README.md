@@ -2,16 +2,15 @@
 
 <img width="887" height="594" alt="ATM1" src="https://github.com/user-attachments/assets/101e446c-306e-4719-9def-2c5fcb17cb9e" />
 
+A professional **Bank Management System and ATM Machine application built in Java**, designed to simulate basic banking operations through a desktop graphical user interface.
 
-A professional **Bank Management System and ATM Machine application built in Java**, converted from a C programming project while preserving the original project logic and functionality.
-
-The system combines **bank account management and ATM operations into one application**, with a graphical user interface (GUI), account authentication, transactions, file handling, and an administrative panel.
+The system combines **bank account management and ATM operations into one application**, with account authentication, transactions, file handling, receipt generation, and an administrative panel.
 
 ---
 
 ## 📌 Project Overview
 
-The **Bank Management System & ATM Machine** is designed to simulate basic banking operations in a desktop Java application.
+The **Bank Management System & ATM Machine** is a Java-based desktop application designed to simulate a real-world banking environment.
 
 The project allows users to:
 
@@ -24,13 +23,11 @@ The project allows users to:
 - Generate transaction receipts
 - Store account and transaction information
 - Block accounts after multiple incorrect PIN attempts
-- Allow administrators to manage accounts
+- Manage accounts through an admin panel
 - Unblock blocked accounts
 - Delete accounts
-- View all registered accounts
+- View registered accounts
 - Reset stored account records
-
-The project was originally developed in **C programming** and later converted to **Java**, keeping the core banking logic and workflow while adapting the implementation to Java and GUI-based interaction.
 
 ---
 
@@ -39,6 +36,7 @@ The project was originally developed in **C programming** and later converted to
 ### 👤 Customer Features
 
 #### 🆕 Create Account
+
 Users can create a new bank account by providing:
 
 - Full Name
@@ -55,8 +53,7 @@ The system also checks whether the account number already exists.
 
 ---
 
-<img width="878" height="591" alt="image" src="https://github.com/user-attachments/assets/11072e87-68f9-4542-9370-1981381d7a90" />
-
+<img width="878" height="591" alt="Account Creation" src="https://github.com/user-attachments/assets/11072e87-68f9-4542-9370-1981381d7a90" />
 
 ### 🔐 Secure Login
 
@@ -150,39 +147,38 @@ The project includes a dedicated administrative section.
 - 📋 List All Accounts
 - 🧹 Reset All Accounts
 
-<img width="890" height="601" alt="image" src="https://github.com/user-attachments/assets/2598dbc6-cc37-4d20-ab80-89a06de228b4" />
-
+<img width="890" height="601" alt="Admin Panel" src="https://github.com/user-attachments/assets/2598dbc6-cc37-4d20-ab80-89a06de228b4" />
 
 The admin panel is protected by an administrator PIN.
 
 > **Default Admin PIN:** `9999`
 
-For a real banking application, credentials should never be hard-coded. This value is included only because this is an academic/demo project.
+For a real banking application, credentials should never be hard-coded. This value is included only for academic and demonstration purposes.
 
 ---
 
 ## 🖥️ Graphical User Interface
 
-Unlike the original C console-based implementation, the Java version uses a **desktop GUI**.
+The application uses a **desktop graphical user interface built with Java Swing**.
 
 The interface provides screens for:
 
-- Welcome screen
-- Main menu
-- Account creation
-- ATM login
-- ATM dashboard
-- Admin login
-- Admin panel
-- Account information
-- Transaction messages
-- Error handling
+- Welcome Screen
+- Main Menu
+- Account Creation
+- ATM Login
+- ATM Dashboard
+- Admin Login
+- Admin Panel
+- Account Information
+- Transaction Messages
+- Error Handling
 
-The GUI is implemented using Java Swing.
+The GUI provides an interactive way for users to perform banking operations without relying on a command-line interface.
 
 ---
-<img width="891" height="592" alt="image" src="https://github.com/user-attachments/assets/9b068b14-ff70-4bda-920d-240403eb7fbe" />
 
+<img width="891" height="592" alt="ATM Dashboard" src="https://github.com/user-attachments/assets/9b068b14-ff70-4bda-920d-240403eb7fbe" />
 
 ## 🛠️ Technologies Used
 
@@ -195,13 +191,13 @@ The GUI is implemented using Java Swing.
 | 📋 ArrayList | Managing account records |
 | 🕒 LocalDateTime | Transaction date and time |
 | 🔐 Exception Handling | Error and invalid-input handling |
-| 🧩 Object-Oriented Programming | Project structure and account management |
+| 🧩 Object-Oriented Programming | Application structure and account management |
 
 ---
 
 ## 🧠 Java Concepts Used
 
-This project demonstrates several important Java programming concepts:
+This project demonstrates several important Java programming concepts.
 
 ### Classes & Objects
 
@@ -221,7 +217,7 @@ class Account {
 
 ### Methods
 
-The project is divided into logical Java methods such as:
+The project uses methods for different banking operations, including:
 
 ```text
 createAccount()
@@ -242,21 +238,21 @@ clearAllAccounts()
 
 ---
 
-### Encapsulation of Data
+### Encapsulation
 
-Account information is managed through Java objects rather than C structures.
+Account-related data and operations are organized within Java classes and objects.
 
 ---
 
 ### Collections
 
-`ArrayList` is used to manage multiple bank accounts in memory.
+`ArrayList` is used to manage multiple bank account records in memory.
 
 ---
 
 ### File Handling
 
-Java file I/O is used to store account and transaction information.
+Java File I/O is used to store account and transaction information.
 
 The project uses files such as:
 
@@ -287,13 +283,13 @@ Java's `LocalDateTime` is used to record transaction date and time.
 
 ### GUI Event Handling
 
-Swing buttons use event listeners to perform actions when users interact with the application.
+Swing buttons and components use event handling to perform actions when users interact with the application.
 
 ---
 
 ## 📂 Project Structure
 
-The project is intentionally maintained as a **single Java source file**.
+The project is maintained as a **single Java source file**.
 
 ```text
 Bank-Management-System/
@@ -312,7 +308,7 @@ Bank-Management-System/
 BankATM.java
 ```
 
-The complete application logic is contained inside this file.
+The complete application logic is contained in this Java source file.
 
 ---
 
@@ -343,20 +339,20 @@ javac -version
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git clone https://github.com/imdadalinaich/Centralized-Bank-Management-and-ATM-System.git
 ```
 
 Navigate into the project folder:
 
 ```bash
-cd YOUR-REPOSITORY
+cd Centralized-Bank-Management-and-ATM-System
 ```
 
 ---
 
 ### 2. Compile the Project
 
-Because the application is contained in one Java file:
+The application is contained in one Java source file:
 
 ```bash
 javac BankATM.java
@@ -414,7 +410,7 @@ The Java Swing GUI will open.
 
 ## 🔐 Account Security Logic
 
-The project uses a simple PIN-based authentication system.
+The project uses a PIN-based authentication system.
 
 ### Login Process
 
@@ -444,7 +440,7 @@ Is Account Blocked?
 
 ## 💾 Data Storage
 
-The application uses local files instead of a database.
+The application uses local files for data storage.
 
 ### `accounts.dat`
 
@@ -501,37 +497,14 @@ The main objectives of this project are:
 
 1. To understand Java programming fundamentals.
 2. To apply Object-Oriented Programming concepts.
-3. To convert an existing C programming project into Java.
-4. To implement file handling in Java.
-5. To implement GUI-based user interaction.
-6. To understand account authentication and validation.
-7. To implement banking transactions.
-8. To practice exception handling.
-9. To understand Java collections.
+3. To implement file handling in Java.
+4. To develop a GUI-based banking application.
+5. To understand account authentication and validation.
+6. To implement banking transactions.
+7. To practice exception handling.
+8. To understand Java collections.
+9. To implement event-driven GUI programming.
 10. To develop a complete academic-level Java application.
-
----
-
-## 🔁 C to Java Conversion
-
-This project was originally implemented in C and converted to Java while maintaining the original banking workflow.
-
-| C Concept | Java Equivalent |
-|---|---|
-| `struct Account` | `Account` Java class |
-| `printf()` / `scanf()` | Swing GUI components |
-| C functions | Java methods |
-| Pointers | Object references |
-| `#define` constants | `static final` constants |
-| C file handling | Java File I/O |
-| `strcmp()` | `String.equals()` |
-| C strings | Java `String` |
-| `time.h` | `LocalDateTime` |
-| Binary/text files | Java object/file streams |
-| `switch-case` | Java control flow / event handling |
-| Console menus | Swing GUI menus/buttons |
-
-The original C project uses structures, file handling, pointers, functions, loops, switch-case, macros, input validation, string handling, and date/time functionality. :contentReference[oaicite:2]{index=2}
 
 ---
 
@@ -551,7 +524,7 @@ For a production banking system, additional security mechanisms would be require
 - Audit logging
 - Encryption
 - Network security
-- Secure password/PIN storage
+- Secure PIN storage
 - Input sanitization
 - Transaction rollback and consistency mechanisms
 
@@ -575,11 +548,11 @@ Because this is an academic desktop application:
 Possible future improvements include:
 
 - [ ] MySQL / PostgreSQL database integration
-- [ ] Secure password/PIN hashing
+- [ ] Secure PIN hashing
 - [ ] User registration and profile management
 - [ ] Improved transaction history
 - [ ] PDF receipt generation
-- [ ] Admin authentication improvements
+- [ ] Improved admin authentication
 - [ ] Role-based access control
 - [ ] Search and filtering for accounts
 - [ ] Modern JavaFX interface
@@ -595,7 +568,6 @@ Possible future improvements include:
 
 **Project:** Bank Management System & ATM Machine  
 **Language:** Java  
-**Original Language:** C  
 **Application Type:** Desktop GUI Application  
 **Course:** Object-Oriented Programming / Java  
 **Institution:** Quaid-e-Awam University of Engineering, Science & Technology (QUEST), Nawabshah
@@ -612,7 +584,7 @@ Quaid-e-Awam University of Engineering, Science & Technology (QUEST), Nawabshah
 
 ---
 
-## ⭐ If You Like This Project
+## ⭐ Support
 
 If you find this project useful for learning Java, OOP, file handling, and GUI development, consider giving the repository a ⭐ star.
 
